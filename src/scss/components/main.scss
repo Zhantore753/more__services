@@ -1,0 +1,233 @@
+.main__inner{
+    margin-top: 60px;
+    display: flex;
+}
+
+.sidebar{
+    width: 33.333%;
+    padding-left: 15px;
+}
+
+.sidebar__list{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__item{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    padding: 0;
+    width: auto;
+    cursor: pointer;
+    font-size: 15px;
+
+    &:hover{
+        .sidebar__item-link{
+            svg{
+                fill: #4a86f8;
+                color: #4a86f8;
+            }
+            span{
+                color: #4a86f8;
+            }
+        }
+    }
+}
+
+.sidebar__item-active{
+    .sidebar__item-link{
+        svg{
+            fill: #4a86f8;
+            color: #4a86f8;
+        }
+        span{
+            color: #4a86f8;
+        }
+    }
+}
+
+
+.sidebar__item-link{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    svg{
+        width: 32px;
+        margin-right: 10px;
+    }
+}
+
+.content{
+    width: 66.666%;
+    margin: 0 auto;
+}
+
+.content__list{
+    margin-top: 10px;
+}
+
+.content__item-title{
+    margin-bottom: 15px;
+    padding-left: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.content__item-cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.content__item-card{
+    cursor: pointer;
+    margin-right: 0;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    width: 47%;
+    box-sizing: border-box;
+}
+
+.content__item-card-image{
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+}
+
+.content__item-card-text{
+    border-radius: 0 0 8px 8px;
+    -webkit-box-shadow: 0 1px 3px #e1e3e3;
+    box-shadow: 0 1px 3px #e1e3e3;
+    padding: 16px 16px 12px;
+    text-transform: capitalize;
+    color: #5f656d;
+    font-weight: 600;
+}
+
+.content__item-additional{
+    display: flex;
+    flex-wrap: wrap;
+
+    a{
+        width: 50%;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 0 auto;
+        -moz-box-flex: 1;
+        -ms-flex: 1 0 auto;
+        flex: 1 0 auto;
+        cursor: pointer;
+        padding-left: 15px;
+        text-transform: capitalize;
+        line-height: 32px;
+        color: #5f656d;
+
+        &:hover{
+            color: #4a86f8;
+        }
+    }
+}
+
+
+
+@media(max-width: 1121px){
+    .content__item-card-image{
+        height: 150px;
+    }
+}
+
+@media(max-width: 767px){
+    .main__inner{
+        margin-top: 0px;
+        flex-direction: column;
+    }
+
+    .sidebar{
+        position: sticky;
+        top: 0;
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .sidebar__list{
+        align-items: center;
+        flex-direction: row;
+        background-color: #fff;
+        overflow-x: scroll;
+    }
+
+    .sidebar__item{
+        padding: 5px;
+        min-width: 80px;
+        font-size: 13px;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    .sidebar__item-link{
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: column;
+
+        svg{
+            margin-right: 0;
+        }
+
+        span{
+            max-width: 100%;
+            overflow: hidden;
+            text-align: center;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            line-height: 23px;
+            white-space: nowrap;
+        }
+    }
+
+    .content{
+        width: 100%;
+    }
+
+    .content__list{
+        margin-top: 25px;
+    }
+
+    .content__item-cards{
+        flex-wrap: nowrap;
+        flex-direction: row;
+        overflow-x: scroll;
+    }
+
+    .content__item-card{
+        width: 250px;
+        margin-left: 0;
+        margin-right: 15px;
+    }
+
+    .content__item-card-image{
+        width: 250px;
+    }
+
+    .content__item-card-text{
+        text-transform: capitalize;
+        font-size: 15px;
+        padding: 14px 14px 12px;
+    }
+
+    .content__item-additional{
+        padding-left: 15px;
+
+        a{
+            text-transform: capitalize;
+            width: 100%;
+            font-size: 15px;
+            font-weight: 400;
+        }
+    }
+}

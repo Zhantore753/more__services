@@ -1,0 +1,30 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #5f656d;
+    background-color: #f9f9f9;
+}
+
+.container{
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.container-header{
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #fff;
+}
+
+@media(max-width: 1121px){
+    .container{
+        max-width: 850px;
+    }
+}
+
+@media(max-width: 767px){
+    body{
+        font-size: 13px;
+    }
+}
