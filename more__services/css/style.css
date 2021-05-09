@@ -641,6 +641,8 @@ body {
   }
 
   .sidebar {
+    position: sticky;
+    top: 51px;
     width: 100%;
     padding-left: 0px;
   }
