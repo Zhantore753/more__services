@@ -13,11 +13,15 @@ const sidebarItems = document.querySelectorAll('.sidebar__item');
 
 sidebarItems.forEach(item => {
     item.addEventListener('click', e => {
+        sidebarItems.forEach(item => {
+            item.classList.remove('sidebar__item-active');
+        });
         e.preventDefault();
         const anchor = item.children[0].getAttribute('data-anchor');
         document.querySelector(`#${anchor}`).scrollIntoView({ 
             behavior: 'smooth' 
         });
+        item.classList.add('sidebar__item-active');
     });
 });
 
