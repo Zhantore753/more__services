@@ -300,9 +300,14 @@ body {
   margin-right: 10px;
 }
 
+.sidebar__item-photo {
+  height: 32px;
+}
+
 .sidebar__item-photo svg {
   height: 20px;
   margin-left: 3px;
+  margin-right: 7px;
 }
 
 .sidebar__item-transport svg {
@@ -690,6 +695,7 @@ body {
   }
 
   .sidebar__item-link {
+    height: 100%;
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -707,6 +713,19 @@ body {
     text-overflow: ellipsis;
     line-height: 23px;
     white-space: nowrap;
+  }
+
+  .sidebar-photo {
+    align-self: flex-end;
+  }
+
+  .sidebar__item-photo {
+    height: 100%;
+  }
+
+  .sidebar__item-photo svg {
+    height: 20px;
+    margin-bottom: 5px;
   }
 
   .content {

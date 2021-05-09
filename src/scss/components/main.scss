@@ -70,10 +70,13 @@
 }
 
 .sidebar__item-photo{
+    
+    height: 32px;
 
     svg{
         height: 20px;
         margin-left: 3px;
+        margin-right: 7px;
     }
 }
 
@@ -201,6 +204,7 @@
     }
 
     .sidebar__item-link{
+        height: 100%;
         align-items: center;
         justify-content: space-between;
         width: 100%;
@@ -218,6 +222,20 @@
             text-overflow: ellipsis;
             line-height: 23px;
             white-space: nowrap;
+        }
+    }
+
+    .sidebar-photo{
+        align-self: flex-end;
+    }
+
+    .sidebar__item-photo{
+    
+        height: 100%;
+    
+        svg{
+            height: 20px;
+            margin-bottom: 5px;
         }
     }
 
