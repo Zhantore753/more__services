@@ -58,7 +58,19 @@
 
     svg{
         width: 32px;
+        height: 32px;
         margin-right: 10px;
+    }
+
+    img{
+        width: 32px;
+        margin-right: 10px;
+    }
+}
+
+.sidebar__item-transport{
+    svg{
+        opacity: 0.7;
     }
 }
 
@@ -71,10 +83,18 @@
     margin-top: 10px;
 }
 
+.content__item{
+    margin-top: 40px;
+
+    &:first-child{
+        margin-top: 0;
+    }
+}
+
 .content__item-title{
     margin-bottom: 15px;
     padding-left: 15px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
 }
 
