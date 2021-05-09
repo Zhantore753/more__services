@@ -50,5 +50,4 @@ window.addEventListener('scroll', () => {
             sidebarItems[index].classList.add('sidebar__item-active');
         }
     });
-    console.log(window.scrollY);
 });
