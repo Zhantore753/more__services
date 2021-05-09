@@ -25,3 +25,14 @@ sidebarItems.forEach(item => {
     });
 });
 
+
+const additionalLinks = document.querySelectorAll('.styles__simpleService___2ldni');
+
+additionalLinks.forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(`#home`).scrollIntoView({ 
+            behavior: 'smooth' 
+        });
+    });
+});
