@@ -8,3 +8,17 @@ menuBtn.addEventListener('click', e => {
     menu.classList.toggle('menu-active');
     document.body.classList.toggle('overflow-h');
 });
+
+const sidebarItems = document.querySelectorAll('.sidebar__item');
+
+sidebarItems.forEach(item => {
+    item.addEventListener('click', e => {
+        e.preventDefault();
+        const anchor = item.children[0].getAttribute('data-anchor');
+        console.log(anchor);
+        document.querySelector(`#${anchor}`).scrollIntoView({ 
+            behavior: 'smooth' 
+        });
+    });
+});
+
