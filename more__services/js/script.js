@@ -36,3 +36,19 @@ additionalLinks.forEach(link => {
         });
     });
 });
+
+const contentItems = document.querySelectorAll('.content__item');
+
+
+window.addEventListener('scroll', () => {
+    
+    contentItems.forEach((item, index) => {
+        if(item.offsetTop <= window.scrollY){
+            sidebarItems.forEach(item => {
+                item.classList.remove('sidebar__item-active');
+            });
+            sidebarItems[index].classList.add('sidebar__item-active');
+        }
+    });
+    console.log(window.scrollY);
+});
