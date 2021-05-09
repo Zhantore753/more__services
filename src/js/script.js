@@ -15,7 +15,6 @@ sidebarItems.forEach(item => {
     item.addEventListener('click', e => {
         e.preventDefault();
         const anchor = item.children[0].getAttribute('data-anchor');
-        console.log(anchor);
         document.querySelector(`#${anchor}`).scrollIntoView({ 
             behavior: 'smooth' 
         });
