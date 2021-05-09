@@ -69,6 +69,14 @@
     }
 }
 
+.sidebar__item-photo{
+
+    svg{
+        height: 20px;
+        margin-left: 3px;
+    }
+}
+
 .sidebar__item-transport{
     svg{
         opacity: 0.7;
@@ -85,10 +93,12 @@
 }
 
 .content__item{
-    margin-top: 40px;
+    padding-top: 80px;
+    margin-bottom: -40px;
 
     &:first-child{
-        margin-top: 0;
+        margin-top: -80px;
+        padding-top: 80px;
     }
 }
 
@@ -217,6 +227,16 @@
 
     .content__list{
         margin-top: 25px;
+    }
+
+    .content__item{
+        padding-top: 135px;
+        margin-bottom: -95px;
+    
+        &:first-child{
+            margin-top: -135px;
+            padding-top: 135px;
+        }
     }
 
     .content__item-cards{
