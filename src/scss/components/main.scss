@@ -103,6 +103,10 @@
         margin-top: -80px;
         padding-top: 80px;
     }
+
+    &:last-child{
+        margin-bottom: 0px;
+    }
 }
 
 .content__item-title{
